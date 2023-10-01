@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Family</title>
+</head>
+<body>
+ <div class="container">
+    <section id="index" class="page">
+        <h1>My Family</h1>
+        <div class="profile">
+            <li>Arnel C. Mariano</li>
+        <li>Maricris B. Angeles</li>
+        <li>John Arnie A. Mariano</li>
+        <li>John Markb A. Mariano</li>
+        <li>Kimberly A. Mariano</li>
+        <!-- Add more relatives as needed -->
+    </div>
+            <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Profile</a></li>
+            <li><a href="{{ url_for('favorites') }}">Favorites</a></li>
+            <li><a href="{{ url_for('friends') }}">Friends</a></li>
+            <li><a href="{{ url_for('family') }}">Family</a></li>
+        </ul>
+    </section>
+</body>
+</html>

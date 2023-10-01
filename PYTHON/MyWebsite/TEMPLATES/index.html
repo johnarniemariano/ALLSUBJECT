@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Your Profile</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Index Section -->
+        <section id="index" class="page">
+            <h1>My Profile</h1>
+            <div class="profile">
+                <img src="{{url_for('static', filename='Jayzxc.jpg')}}" align="middle" />
+                <h2>John Arnie A. Mariano</h2>
+                <p>
+                    I,Am 3rd Year BSIT Students in Phinma Arraullo University
+                </p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Profile</a></li>
+        <li><a href="{{ url_for('favorites') }}">Favorites</a></li>
+        <li><a href="{{ url_for('friends') }}">Friends</a></li>
+        <li><a href="{{ url_for('family') }}">Family</a></li>
+            </ul>
+        </section>
+</body>
+</html>

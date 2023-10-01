@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Friends</title>
+</head>
+<body>
+   <div class="container">
+    <section id="index" class="page">
+        <h1>My Friends</h1>
+        <div class="profile">
+        <li>Joseph</li>
+        <li>Janrey</li>
+        <li>Jan</li>
+        <li>Jimz</li>
+        <li>Dan</li>
+        <!-- Add more friends as needed -->
+    </div>
+            <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Profile</a></li>
+            <li><a href="{{ url_for('favorites') }}">Favorites</a></li>
+            <li><a href="{{ url_for('friends') }}">Friends</a></li>
+            <li><a href="{{ url_for('family') }}">Family</a></li>
+        </ul>
+    </section>
+</body>
+</html>
+
