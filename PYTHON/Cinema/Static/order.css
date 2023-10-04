@@ -1,0 +1,139 @@
+/* Style the entire form container */
+#booking {
+    background-color: #fffafa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style form headings */
+h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Style form inputs and textareas */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style the select element */
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the number input controls */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Change submit button color on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style form addons */
+label[for="popcorn"],
+label[for="drink"],
+label[for="burger"] {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+/* Style error messages for required fields */
+input:required:invalid,
+textarea:required:invalid,
+select:required:invalid {
+    border-color: #ff6347;
+}
+
+/* Style success message */
+.success-message {
+    color: #4caf50;
+    font-weight: bold;
+    text-align: center;
+}
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000; /* Change background color to black */
+    color: #fff; /* Change text color to white */
+}
+
+/* Style table headers (th) */
+th {
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* Style table rows (tr) */
+tr:nth-child(even) {
+    background-color: #000; /* Change even row background to white */
+}
+
+tr:nth-child(odd) {
+    background-color: #000; /* Change odd row background to black */
+}
+
+/* Style table cells (td) */
+td {
+    padding: 8px;
+    border-bottom: 1px solid #fff; /* Change cell border color to white */
+}
+
+/* Hover effect for table rows */
+tr:hover {
+    background-color: #ddd;
+}
